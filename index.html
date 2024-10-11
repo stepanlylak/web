@@ -24,16 +24,7 @@
     </style>
 </head>
 <body>
-<header>
-    <nav>
-        <a href="index.html">Головна</a> |
-        <a href="pages/page-1/index.html">Сучасна класифікація</a> |
-        <a href="pages/page-2/index.html">Поширення</a> |
-        <a href="pages/page-3/index.html">Живлення</a> |
-        <a href="pages/page-4/index.html">Розмноження</a> |
-        <a href="pages/page-5/index.html">Еволюція</a>
-    </nav>
-</header>
+<header></header>
 <section>
     <h5>Зміст</h5>
     <ol>
@@ -62,7 +53,8 @@
         </p>
         <section>
             <h5>Оперення</h5>
-            <p><img src="img/Fiery_throated_Hummingbird_JCB2.jpg"/>Яскраве, райдужне забарвлення деяких частин оперення колібрієвих зумовлене мікроструктурою їхнього пір'я. У них зазвичай відсутні гачечки, а під верхнім шаром в борідках знаходиться нерівномірний шар меланінів, що має мозаїчну структуру і заповнений пухириками повітря. В межах однієї борідки цей шар може включати до 10 рівнів.</p>
+            <p><img onmouseover="this.width = 400;"
+                    onmouseout="this.width = 200;" src="img/Fiery_throated_Hummingbird_JCB2.jpg"/>Яскраве, райдужне забарвлення деяких частин оперення колібрієвих зумовлене мікроструктурою їхнього пір'я. У них зазвичай відсутні гачечки, а під верхнім шаром в борідках знаходиться нерівномірний шар меланінів, що має мозаїчну структуру і заповнений пухириками повітря. В межах однієї борідки цей шар може включати до 10 рівнів.</p>
         </section>
         <section>
             <h5>Анатомія</h5>
@@ -95,6 +87,24 @@
             <a href="https://uk.wikipedia.org/wiki/Колібрієві"><span>В</span>ікіпедія</a>
         </li>
     </ol>
+    <blockquote></blockquote>
 </footer>
+<script type="text/javascript">
+    const infoOfDay = [
+        "Цитата дня: «Найкращий спосіб передбачити майбутнє — це створити його.» — Авраам Лінкольн",
+        "Анекдот дня: Йде програміст по вулиці, бачить — лежить флешка. Підняв, поніс додому, вставив у комп'ютер — вірус.",
+        "Цікавий факт дня: Бджола може відвідати до 1000 квіток за один день."
+    ];
+
+    function getInfoOfDay() {
+        // Отримуємо випадковий індекс з масиву
+        const randomIndex = Math.floor(Math.random() * infoOfDay.length);
+        return infoOfDay[randomIndex];
+    }
+
+    document.querySelector('footer blockquote').innerText = getInfoOfDay();
+</script>
+<script type="text/javascript" src="js/browser-info.js"></script>
+<script type="text/javascript" src="js/navbar.js"></script>
 </body>
 </html>

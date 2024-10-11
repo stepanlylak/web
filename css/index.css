@@ -1,6 +1,12 @@
 body {
     background-color: azure;
 }
+body > header {
+    height: 38px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
 
 footer span {
     font-size: 24px;
@@ -8,10 +14,10 @@ footer span {
 
 nav {
     padding: 10px 20px;
-    background-color: aquamarine;
 }
 
-nav a {
+nav span {
+    cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
