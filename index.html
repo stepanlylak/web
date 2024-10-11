@@ -87,7 +87,23 @@
             <a href="https://uk.wikipedia.org/wiki/Колібрієві"><span>В</span>ікіпедія</a>
         </li>
     </ol>
+    <blockquote></blockquote>
 </footer>
+<script type="text/javascript">
+    const infoOfDay = [
+        "Цитата дня: «Найкращий спосіб передбачити майбутнє — це створити його.» — Авраам Лінкольн",
+        "Анекдот дня: Йде програміст по вулиці, бачить — лежить флешка. Підняв, поніс додому, вставив у комп'ютер — вірус.",
+        "Цікавий факт дня: Бджола може відвідати до 1000 квіток за один день."
+    ];
+
+    function getInfoOfDay() {
+        // Отримуємо випадковий індекс з масиву
+        const randomIndex = Math.floor(Math.random() * infoOfDay.length);
+        return infoOfDay[randomIndex];
+    }
+
+    document.querySelector('footer blockquote').innerText = getInfoOfDay();
+</script>
 <script type="text/javascript" src="js/browser-info.js"></script>
 <script type="text/javascript" src="js/navbar.js"></script>
 </body>
